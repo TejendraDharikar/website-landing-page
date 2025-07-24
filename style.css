@@ -1,0 +1,189 @@
+*{
+  box-sizing:border-box;
+  margin:0px;
+  padding:0px;
+  font-style:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+nav{
+  height:80px;
+  background:#5cbdb9;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0px;
+}
+.logo{
+  white-space:nowrap;
+  color:white;
+  font-size:32px;
+  font-weight:bold;
+  padding:0px 20px;
+}
+nav a{
+  font-size:12px;
+   white-space:nowrap;
+  text-decoration:none;
+  color:black;
+  padding:0px 20px;
+}
+nav a:hover{
+  font-weight:bold;
+   text-decoration:none;
+    color:black;
+  background:yellow;
+  border-radius:15px;
+  padding:0px 20px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.main-body{
+background:rgb(168, 186, 225);
+}
+.container{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  height:600px;
+  padding:3px;
+}
+.left-container{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:black;
+  padding:0px 20px;
+}
+.left-container h1{
+font-size:40px;
+margin-bottom:10px;
+white-space:nowrap;
+line-height:2.5;
+}
+.left-container p{
+font-size:20px;
+margin-bottom:15px;
+white-space:nowrap;
+line-height:0.8;
+}
+button{
+  padding:20px 40px;
+  font-size:20px;
+  border:none;
+  color:purple;
+  background:orange;
+   border-radius:50px;
+   cursor:pointer;
+}
+button:hover{
+color:black;
+  background:green;
+}
+
+.right-container{
+   display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0px 10px;
+
+}
+.picture{
+    border-radius:80px;
+  width:80%;
+   position: relative;
+  animation-name:goesup;
+  animation-duration: 4s;  
+  animation-delay: 0s;
+  animation-iteration-count:infinite;
+}
+@keyframes goesup {
+  0% {top: 27px;opacity:0.5}
+  50% {top: 0px;opacity:1}
+  100%{top: 27px;opacity:0.5}
+}
+
+@media(max-width:700px){
+  .container{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+  nav a{
+    display:grid;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.bottom-details{
+  text-decoration:none;
+  background:#fbe3e8;
+ display:grid;
+ grid-template-columns:500px 1fr 1fr;
+  color:black;
+  line-height:1.5;
+}
+@media(max-width:600px){
+  .bottom-details{
+ display:grid;
+ grid-template-columns:1fr 1fr 1fr;
+}
+}
+
+.moto{
+  white-space:wrap;
+  padding:0px 25px 0px 0px;
+}
+.nav-links{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    height:80px;
+  background:#fbe3e8;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0px;
+}
+.nav-details{
+  padding:0px 20px;
+}
+.nav-details a{
+   padding:0px 6px;
+}
